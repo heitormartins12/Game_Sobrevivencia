@@ -1,1 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AquaSave - Inteligência Hídrica para um Futuro Sustentável. Monitore vazamentos e consumo excessivo de água em tempo real com sensores IoT e IA.">
+  <title>AquaSave | Inteligência Hídrica para um Futuro Sustentável</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 4C24 4 10 18 10 28C10 36.2843 16.7157 43 25 43C33.2843 43 40 36.2843 40 28C40 18 24 4 24 4Z" fill="url(#waterGrad)"/>
+          <path d="M24 14C24 14 16 22 16 28C16 32.4183 19.5817 36 24 36C28.4183 36 32 32.4183 32 28C32 22 24 14 24 14Z" fill="#0ea5e9" opacity="0.6"/>
+          <defs>
+            <linearGradient id="waterGrad" x1="24" y1="4" x2="24" y2="43" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#38bdf8"/>
+              <stop offset="1" stop-color="#0284c7"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>AquaSave</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#problema">O Problema</a></li>
+        <li><a href="#solucao">Solução</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#publico">Público</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+        <li><a href="#contato" class="btn-nav">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Inteligência Hídrica</div>
+      <h1>Aqua<span>Save</span></h1>
+      <p class="hero-subtitle">Inteligência Hídrica para um Futuro Sustentável</p>
+      <p class="hero-desc">Monitore vazamentos invisíveis e consumo excessivo em tempo real. Economize água, reduza custos e proteja o planeta com sensores inteligentes, IoT e Inteligência Artificial.</p>
+      <div class="hero-cta">
+        <a href="#solucao" class="btn btn-primary">Conhecer a Solução</a>
+        <a href="#como-funciona" class="btn btn-outline">Como Funciona</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">20-30%</span>
+          <span class="stat-label">Economia média</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">24/7</span>
+          <span class="stat-label">Monitoramento</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">Minutos</span>
+          <span class="stat-label">Detecção de vazamentos</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quem Somos -->
+  <section class="section about" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quem Somos</span>
+        <h2>Nós somos a <span class="text-gradient">AquaSave</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Solução Inteligente</h3>
+          <p>Combatemos o desperdício de água com tecnologia de ponta</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3>Proteção de Recursos</h3>
+          <p>Tecnologia que protege recursos hídricos e reduz custos operacionais</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>Inovação Sustentável</h3>
+          <p>Construindo um futuro mais verde, gota a gota</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O Problema -->
+  <section class="section problem" id="problema">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O Problema</span>
+        <h2>Desperdício de Água: <br>Uma Crise Invisível</h2>
+        <p class="section-desc">Vazamentos e consumo excessivo passam despercebidos até gerarem prejuízos enormes.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">🏠</div>
+          <h3>Casas</h3>
+          <p>Vazamentos invisíveis consomem até <strong>30%</strong> da água</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🏢</div>
+          <h3>Empresas</h3>
+          <p>Consumo excessivo sem qualquer monitoramento</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🏘️</div>
+          <h3>Condomínios</h3>
+          <p>Dificuldade em identificar perdas por unidade</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🏫</div>
+          <h3>Escolas</h3>
+          <p>Falta de controle e cultura de consumo responsável</p>
+        </div>
+      </div>
+
+      <div class="problem-details">
+        <div class="detail-item">
+          <h4>Perda Contínua</h4>
+          <p>Vazamentos não detectados desperdiçam água dia e noite, sem parar.</p>
+        </div>
+        <div class="detail-item">
+          <h4>Falta de Visibilidade</h4>
+          <p>Impossível saber onde a água está sendo desperdiçada.</p>
+        </div>
+        <div class="detail-item">
+          <h4>Descoberta Tardia</h4>
+          <p>O consumo anormal só aparece na conta — quando já é tarde demais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solução -->
+  <section class="section solution" id="solucao">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossa Solução</span>
+        <h2>Sistema Inteligente de Monitoramento</h2>
+        <p class="section-desc">Tecnologia completa para detectar, alertar e prevenir o desperdício de água.</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="sol-icon">📡</div>
+          <h3>Sensores Inteligentes</h3>
+          <p>Monitoram fluxo de água em tempo real, 24h por dia</p>
+        </div>
+        <div class="solution-card">
+          <div class="sol-icon">📶</div>
+          <h3>IoT</h3>
+          <p>Conectividade contínua com dados precisos e confiáveis</p>
+        </div>
+        <div class="solution-card">
+          <div class="sol-icon">📱</div>
+          <h3>Aplicativo</h3>
+          <p>Visualização clara do consumo com alertas inteligentes</p>
+        </div>
+        <div class="solution-card">
+          <div class="sol-icon">🧠</div>
+          <h3>Inteligência Artificial</h3>
+          <p>Detecta padrões anormais e previne desperdícios automaticamente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section class="section how" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Como Funciona</span>
+        <h2>Ela Funciona Assim</h2>
+        <p class="section-desc">Do sensor ao seu celular em segundos — identificação precisa de qualquer vazamento ou desperdício.</p>
+      </div>
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Sensores</h3>
+          <p>Instalados para monitorar fluxo 24/7</p>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Transmissão</h3>
+          <p>Dados enviados via IoT para a nuvem</p>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Análise</h3>
+          <p>IA identifica padrões e anomalias</p>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3>Alertas</h3>
+          <p>Notificações enviadas pelo app</p>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <h3>Localização</h3>
+          <p>Usuário encontra o vazamento exato</p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-arrow">→</span>
+          <div>
+            <h4>Monitoramento Contínuo</h4>
+            <p>Consumo de água acompanhado em tempo real, sem interrupções</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-arrow">→</span>
+          <div>
+            <h4>Alertas Instantâneos</h4>
+            <p>Notificação imediata ao detectar qualquer anomalia</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-arrow">→</span>
+          <div>
+            <h4>Dashboard Intuitivo</h4>
+            <p>Consumo detalhado por cômodo ou setor, de forma visual</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-arrow">→</span>
+          <div>
+            <h4>Histórico Completo</h4>
+            <p>Análise de tendências para decisões mais inteligentes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Público-Alvo -->
+  <section class="section audience" id="publico">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Público-Alvo</span>
+        <h2>Quem Usa AquaSave</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-img">🏠</div>
+          <h3>Famílias</h3>
+          <p>Reduzem a conta de água e protegem suas casas de vazamentos ocultos</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-img">🏘️</div>
+          <h3>Condomínios</h3>
+          <p>Controlam o consumo coletivo e identificam unidades problemáticas</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-img">🏢</div>
+          <h3>Empresas</h3>
+          <p>Otimizam operações, reduzem custos e reforçam a imagem sustentável</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-img">🏫</div>
+          <h3>Escolas</h3>
+          <p>Educam sobre sustentabilidade enquanto economizam recursos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impacto -->
+  <section class="section impact" id="impacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Impacto por Segmento</span>
+        <h2>Nosso Público: Impacto Real</h2>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card highlight">
+          <div class="impact-value">20-30%</div>
+          <div class="impact-label">↓ Custo Residencial</div>
+          <p>Economia média na conta de água por mês</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-value">Comercial</div>
+          <div class="impact-label">Redução de desperdício</div>
+          <p>Melhoria da imagem sustentável e otimização de custos</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-value">100%</div>
+          <div class="impact-label">Institucional</div>
+          <p>Controle de custos com responsabilidade ambiental comprovada</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="section differentials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Diferencial</span>
+        <h2>Somos Diferentes Porque</h2>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-card">
+          <h3>Detecção Rápida</h3>
+          <p>Identifica vazamentos em <strong>minutos</strong>, não em meses</p>
+        </div>
+        <div class="diff-card">
+          <h3>Precisão Cirúrgica</h3>
+          <p>Mostra <strong>exatamente</strong> onde e quanto está sendo desperdiçado</p>
+        </div>
+        <div class="diff-card">
+          <h3>IA que Aprende</h3>
+          <p>Aprende padrões de consumo e <strong>previne</strong> desperdícios futuros</p>
+        </div>
+        <div class="diff-card">
+          <h3>Simplicidade Total</h3>
+          <p>Interface amigável que <strong>qualquer pessoa</strong> consegue usar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modelo de Receita -->
+  <section class="section revenue">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Modelo de Receita</span>
+        <h2>Como Ganhamos</h2>
+      </div>
+      <div class="revenue-grid">
+        <div class="revenue-card">
+          <div class="rev-num">1</div>
+          <h3>Venda dos Sensores</h3>
+          <p>Receita inicial com hardware e instalação do sistema</p>
+        </div>
+        <div class="revenue-card">
+          <div class="rev-num">2</div>
+          <h3>Assinatura Mensal</h3>
+          <p>Acesso contínuo ao app, monitoramento IA e suporte premium</p>
+        </div>
+        <div class="revenue-card">
+          <div class="rev-num">3</div>
+          <h3>Escalabilidade</h3>
+          <p>Múltiplos sensores por cliente ampliam o valor recorrente</p>
+        </div>
+        <div class="revenue-card">
+          <div class="rev-num">4</div>
+          <h3>Alta Retenção</h3>
+          <p>Economia comprovada garante renovação contínua da assinatura</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contato -->
+  <section class="section cta" id="contato">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Pronto para economizar água e dinheiro?</h2>
+        <p>Junte-se a famílias, empresas e instituições que já estão protegendo o futuro com a AquaSave.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+          </div>
+          <div class="form-row">
+            <select name="tipo" required>
+              <option value="">Tipo de interesse</option>
+              <option value="residencial">Residencial / Família</option>
+              <option value="condominio">Condomínio</option>
+              <option value="empresa">Empresa</option>
+              <option value="escola">Escola / Instituição</option>
+            </select>
+            <input type="tel" name="phone" placeholder="Telefone (opcional)">
+          </div>
+          <textarea name="message" rows="4" placeholder="Conte-nos um pouco sobre sua necessidade..."></textarea>
+          <button type="submit" class="btn btn-primary btn-full">Solicitar Contato</button>
+        </form>
+        <p class="form-note">Responderemos em até 24 horas úteis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C24 4 10 18 10 28C10 36.2843 16.7157 43 25 43C33.2843 43 40 36.2843 40 28C40 18 24 4 24 4Z" fill="url(#waterGrad2)"/>
+              <defs>
+                <linearGradient id="waterGrad2" x1="24" y1="4" x2="24" y2="43" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#38bdf8"/>
+                  <stop offset="1" stop-color="#0284c7"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>AquaSave</span>
+          </a>
+          <p>Inteligência Hídrica para um Futuro Sustentável</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <a href="#problema">O Problema</a>
+          <a href="#solucao">Solução</a>
+          <a href="#como-funciona">Como Funciona</a>
+          <a href="#publico">Público</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <a href="mailto:contato@aquasave.com.br">contato@aquasave.com.br</a>
+          <a href="#contato">Solicitar demonstração</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AquaSave. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
